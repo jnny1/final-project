@@ -2,7 +2,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .home-page{
-    background-image: url(final-project-1/img-folder/rob-laughter-redcurtains-unsplash.jpg);
+    background-image: url(/../img-folder/rob-laughter-redcurtains-unsplash.jpg);
 }
 .flex-container{
     display: flex;
@@ -12,8 +12,14 @@ header{
     font-size: 58px;  
     width: 60%;
 }
+header a{
+    text-decoration: none;
+    color: maroon;
+
+}
 nav{
     width:40%;
+    text-align: right;
 }
 ul{
     list-style-type: none ; 
@@ -28,4 +34,7 @@ li{
 }
 li a{
     text-decoration: none;
+}
+p{
+    color: white;
 }
