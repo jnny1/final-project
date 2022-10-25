@@ -1,15 +1,17 @@
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
 }
-body{
+/*body{
     background-image: url(/../img-folder/rob-laughter-redcurtains-unsplash.jpg);
     background-repeat: no-repeat;
-    background-color: #f8f8f8;
+    background-color: hsl(0, 50%, 50%);
     background-size: cover;
   
-}
+} */
 .flex-container{
     display: flex;
+    background-color: rgb(212,152,202);
+    
 }
 header{
     font-weight: 700;
@@ -18,27 +20,35 @@ header{
 }
 header a{
     text-decoration: none;
-    color: maroon;
+    color: rgb(255, 255, 255);
 
 }
 nav{
     width:40%;
     text-align: right;
 }
-ul{
-    list-style-type: none ; 
-    margin:0;
-    padding-top: 40px;
-}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 40px;
+    overflow: hidden;
+  }
 li{
-    font-weight: 400;
+    font-weight: 600;
     font-size: 20px;
     display: inline;
     padding: 5px;
 }
 li a{
     text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 p{
-    color: white;
+    color: rgb(91, 37, 82);
+}
+a:visited{
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    color: rgb(91, 37, 82);
 }
