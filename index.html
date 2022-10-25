@@ -14,7 +14,7 @@
 <body class="home-page">
     <div class = "flex-container">
         <header>
-            <img src="" alt="Bellyfull Logo">
+            <img src="./img-folder/BellyfullLogo.png" alt="Bellyfull Logo">
             <a href="index.html">Bellyfull</a></header>
         <nav>
             <ul class = "navigation-bar">
@@ -24,8 +24,80 @@
             </ul>
         </nav>
     </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam omnis est facere neque delectus fuga asperiores architecto nulla, eius soluta cum molestiae sapiente veniam repellendus? Modi voluptas fugit nesciunt aperiam.</p>
+ 
+ 
+    <h2 style="text-align:center">Featured</h2>
+
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <img src="./img-folder/horizontaldisplaycupcake.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <img src="img_5terre_wide.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="img_mountains_wide.jpg" style="width:100%">
+      </div>
+    
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container"> 
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="final-project-1/img-folder/horizontaldisplaycupcake.jpg" style="width:100%" onclick="currentSlide(1)" alt="Cupcakes">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+        
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+  
+        <p>Welcome to Bellyfull</p>
+        <p>where a sweet taste goes a long way</p>
     </div>
     <video width="240" height="200" controls><source src="media/large-stage-light.mp4" type="video/mp4"></video>
     <audio  controls><source src="media/dreaming-big.mp3" type="audio/ogg"></audio>
