@@ -17,10 +17,16 @@ header{
     font-weight: 700;
     font-size: 58px;  
     width: 60%;
+    height:50px;
 }
-header a{
+header a img{
     text-decoration: none;
     color: rgb(255, 255, 255);
+    width: 100px;
+    height:100px;
+    padding-top: 5px;
+    padding-left: 4px;
+
 
 }
 nav{
@@ -43,8 +49,17 @@ li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-p{
+h2, h4{
     color: rgb(91, 37, 82);
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+
+}
+h3{
+    text-align:center;
+    margin-top: 50px;
 }
 a:visited{
     color: rgb(255, 255, 255);
@@ -61,11 +76,15 @@ img {
   /* Position the image container (needed to position the left and right arrows) */
   .container {
     position: relative;
+    width: 70%;
+    height: 30 px;
+    padding-left: 16%;
   }
   
   /* Hide the images by default */
   .mySlides {
     display: none;
+
   }
   
   /* Add a pointer when hovering over the thumbnail images */
@@ -110,7 +129,7 @@ img {
     position: absolute;
     top: 0;
   }
-  
+
   /* Container for image text */
   .caption-container {
     text-align: center;
@@ -140,3 +159,10 @@ img {
   .demo:hover {
     opacity: 1;
   }
+  .demo{
+    height: 200px;
+
+  }
+video{
+    margin-top: 40px;
+}
