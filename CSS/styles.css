@@ -68,9 +68,20 @@ a:hover{
     color: rgb(91, 37, 82);
 }
 
-
+.index_info{
+    font:Light 300;
+    text-align: center;
+}
+.index_spacer{
+    background-color: rgb(212,152,202);
+    height: 3px;
+    width: 80%;
+    margin-left: 150px;
+    
+}
 img {
     vertical-align: middle;
+    height: 500px;
   }
   
   /* Position the image container (needed to position the left and right arrows) */
@@ -166,6 +177,9 @@ img {
 video{
     margin-top: 40px;
 }
+
+
+/*Footer styling*/
 .footer{
     height:110px;
     background-color: rgb(212,152,202);
