@@ -47,6 +47,7 @@ li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+/*Home*/
 h2, h4{
     color: rgb(91, 37, 82);
     text-align: center;
@@ -175,6 +176,67 @@ img {
 video{
     margin-top: 40px;
 }
+.disclaimer{
+    float:left;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+}
+
+/*About Section*/
+.about-row{
+    margin-top: 30px;
+    margin-left:200px;
+}
+.about-column{
+    float: left;
+    width: 45%;
+
+}
+.portrait{
+    padding-left: 90px;
+}
+.about_p{
+    font-size: 17px;
+    margin-top: 125px;
+    padding-right: 40px;
+    
+}
+.about_p1{
+    font-weight:  600;
+    color: rgb(91, 37, 82);
+    font-size: 40px;
+    
+}
+.about-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.after-about-space{
+    height:20px;
+  }
+
+
+.about_vid{
+    /*text-align: center;*/
+  
+    margin-bottom:20px;
+  
+}
+.about-media-box{
+    display: flex;
+    margin-left: 270px;
+    
+}
+.about-media-box > div{
+    margin:10px;
+    padding:10px;
+   
+}
+/*.map{
+    text-align: center;
+}*/
+    
 
 /*Contact Section*/
 .hero-image-contact{
@@ -223,10 +285,7 @@ video{
 .gallery-space{
     height:30px;
 }
-.gallery-box{
-    display: flex;
-    text-align: center;
-}
+
 .gallery {
     border: 1px solid #ccc;
 }
@@ -265,4 +324,14 @@ video{
     height:110px;
     background-color: rgb(212,152,202);
     text-align: right;
+}
+/*submit.html>body{
+    background-image: url("../img-folder/heroimg.jpg");
+    background-repeat: no-repeat;
+    display: cover;
+}*/
+.submission{ 
+    margin-top: 350px;
+    text-align: center;
+    color: rgb(91, 37, 82);
 }
